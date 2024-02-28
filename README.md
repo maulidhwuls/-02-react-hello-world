@@ -33,6 +33,12 @@ Perbedaan Next.js, Remix, dan Gatsby
 
 Next.js, dengan fokus pada fleksibilitas, memberikan pengembang berbagai opsi untuk membangun aplikasi web, termasuk SSR dan SSG, sementara Remix menawarkan integrasi penuh antara sisi klien dan sisi server dalam pendekatan "Full Stack React", dan Gatsby memungkinkan pembangunan situs web statis yang cepat dengan menyediakan berbagai fitur dan plugin-plugin yang mempercepat proses pengembangan. Selain itu, gatsby menggunkan konsep "generate once, serve everywhere" di mana halaman-halaman situs web dibangun selama proses pembangunan dan disajikan sebagai berkas statis kepada pengguna.
 
+Bukti Setup Remix Berhasil
+![Screenshot](assets-report/01.png)
+
+Bukti Setup Gatsby Berhasil
+![Screenshot](assets-report/02.png)
+
 Jawaban Soal 2
 - Folder .next adalah folder output yang dihasilkan oleh Next.js setelah proses pembangunan (build). Ini berisi file-file seperti halaman yang telah di-render, file-file statis yang telah dioptimalkan, dan hasil lain dari proses pembangunan proyek Next.js.
 - Folder node_modules merupakan folder yang menyimpan semua paket dan dependensi yang diperlukan dalam membuat sebuah proyek react. Paket yang dimaksud termasuk paket-paket seperti React, Next.js, dan paket-paket lain yang telah diinstal menggunakan npm atau Yarn.
@@ -52,16 +58,21 @@ Jawaban Soal 2
 Jawaban Soal 3
 
 Dalam melakukan perubahan data pada proyek Next.js, kita tidak perlu lagi melakukan menjalankan kembali perintah "npm run dev" atau melakukan reload halaman kembali di browser. Hal ini bisa terjadi karena Next.js menyediakan fitur Hot Module Replacement (HMR) yaitu sebuah mekanisme yang memungkinkan perubahan pada kode sumber yang diterapkan secara langsung ke aplikasi web tanpa perlu mereload kembali. Beberapa file konfigurasi, seperti next.config.js untuk konfigurasi Next.js dan tsconfig.json untuk konfigurasi TypeScript ini berpengaruh dalam perilaku Hot Module Replacement.
+![Screenshoot](assets-report/03.png)
 
 Jawaban Soal 4
 
 Jika menyesuaikan kode yang digunakan pada nomor 3, kemudian dibuatkan komponen baru lalu komponen tersebut dipanggil pada halaman utama, sebenarnya tidak memberikan perubahan pada tampilan halaman utama. Hal ini bisa terjadi karena komponen-komponen dalam React adalah komponen mandiri dan tidak menyimpan state atau konteks aplikasi secara global. Perubahan tampilan halaman dapat terjadi hanya saja jika kita melakukan pemanggilan komponen kemudian meletakkan komponen tersebut pada posisi yang berbeda dari sebelumnya.
+![Screenshoot](assets-report/04.png)
+![Screenshoot](assets-report/05.png)
 
 Jawaban Soal 5
 
-
+Dalam tampilan tersebut tidak ada perubahan karena kode-kode HTML yang dimasukkan dalam komponen MyPage() yang dipanggil adalah sama dengan yang ada pada file page.tsx sebelumnya. Bedanya hanya terdapat pada kalimat diatasnya yang digunakan sebagai penanda bahwa halaman tersebut memanggil komponen MyPage.
+![Screenshoot](assets-report/06.png)
 
 Jawaban Soal 6
+![Screenshoot](assets-report/07.png)
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
